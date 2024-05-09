@@ -1,0 +1,48 @@
+*{
+    border: black solid 1px;
+}
+
+@font-face {
+    font-family: 'Korinna'; /*a name to be used later*/
+    src: url('Korinna/ITC_\ Korinna\ Normal.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Swiss";
+    src: url(Swiss\ 921\ BT.ttf);
+}
+
+#board{
+    height:300px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.square{
+    display: flex;
+    background-color: rgb(0, 0, 190);
+   /* height: 200px;
+    width: 500px;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.money{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 4em;
+    color: rgb(255, 187, 0);    
+}
+
+.question{
+    font-family:"Korinna" ;
+    color: white;
+    font-weight: 600;
+}
+
+.category{
+    font-family: "Swiss";
+    color: white;
+    font-size: 2em;
+}
