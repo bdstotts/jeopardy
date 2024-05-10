@@ -1,8 +1,15 @@
 //const box200 = document.getElementsByClassName("money");
 //console.log(box200);
+
+team1ScoreBox= document.getElementById("team1Score");
+team2ScoreBox= document.getElementById("team2Score");
+team1Score =0;
+team2Score =0;
+
 const board = document.getElementById("board");
 const dialog = document.querySelector("dialog");
-const closeButton = document.getElementById("close");
+//const closeButton = document.getElementById("close");
+
 const cat1 = [
     {dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
     {dollars: "$200", link: "https://github.com/new", answer:"github"}
@@ -12,12 +19,52 @@ for(i=0;i<cat1.length;i++){
    const square = document.createElement("div");
    square.classList.add("square");
    square.classList.add("money")
-   square.innerHTML = cat1[i].dollars;
+   let value = parseInt(cat1[i].dollars.slice(1));
+   square.innerHTML = "$"+value;
+   const link = cat1[i].link;
    board.appendChild(square);
-   console.log(square.innerHTML);
+   square.addEventListener("click", openModal)
+   
+    function openModal(){
+       // console.log("money clicked");
+        //const value = parseInt(this.innerHTML.slice(1));
+        console.log("money clicked of $" + value + " value");
+        dialog.showModal();
+
+        playButton = document.getElementById("playButton")
+        playButton.addEventListener("click",playMedia)
+
+        function playMedia(){
+        window.open(link,"_blank");
+
+        }
+
+
+    closeButton.addEventListener("click", () => {
+        const team1 = document.getElementById("team1");
+        const team2 = document.getElementById("team2")
+
+        if (team1.checked){
+            team1Score = (team1Score + value);
+        }
+
+        if(team2.checked){
+            team2Score = (team2Score + value);
+        }
+
+        team1ScoreBox.innerHTML = team1Score;
+        team2ScoreBox.innerHTML = team2Score;
+        // value=0
+        console.log(value)
+
+        dialog.close();
+       });
+
+       
 
 }
 
+}
 
 /*function action(){
     console.log("Money was clicked")
