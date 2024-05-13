@@ -29,6 +29,7 @@ for(i=0;i<cat1.length;i++){
     console.log("clicked");
     mediaBox = document.getElementById("mediaBox")
     play = document.createElement("button")
+    play.setAttribute("id", "play")
     play.innerHTML= "Play";
     mediaBox.appendChild(play);
 
@@ -47,19 +48,54 @@ for(i=0;i<cat1.length;i++){
     team2Check = document.createElement("input")
     team2Check.setAttribute("type", "checkbox")
     checkDiv.appendChild(team2Check);
-    
 
     p2Label = document. createElement("p");
     p2Label.innerHTML = "Team 2 Wins"
     checkDiv.appendChild(p2Label)
-    
-
- 
 
     submit = document.createElement("button")
     submit.innerHTML= "submit";
+    submit.setAttribute("id", "submit")
     mediaBox.appendChild(submit);
-    
+
+    items = [checkDiv,team1Check,team2Check,p1Label,p2Label,play,submit]
+
+    console.log(play)
+
+    play.addEventListener("click",playMedia)
+   
+    function playMedia(){
+        window.open(link)
+    }
+
+    submit.addEventListener("click", submitted)
+
+    function submitted(){
+        items = [checkDiv,team1Check,team2Check,p1Label,p2Label,play,submit]
+        console.log(items)
+
+        if (team1Check.checked){
+            team1Score = (team1Score + value);
+        }
+
+        if(team2Check.checked){
+            team2Score = (team2Score + value);
+        }
+
+        team1ScoreBox.innerHTML = team1Score;
+        team2ScoreBox.innerHTML = team2Score;
+
+            play.remove();
+            submit.remove();
+            checkDiv.remove();
+        
+            square.style.color = "rgb(0,0,190)";
+
+
+
+    }
+
+
 
    }
 
