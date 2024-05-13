@@ -39,6 +39,8 @@ for(i=0;i<cat1.length;i++){
 
         }
 
+        this.style.color = ("rgb(0,0,190)")
+
 
     closeButton.addEventListener("click", () => {
         const team1 = document.getElementById("team1");
@@ -60,7 +62,7 @@ for(i=0;i<cat1.length;i++){
         dialog.close();
        });
 
-       
+      
 
 }
 
