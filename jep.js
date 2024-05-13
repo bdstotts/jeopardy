@@ -23,9 +23,50 @@ for(i=0;i<cat1.length;i++){
    square.innerHTML = "$"+value;
    const link = cat1[i].link;
    board.appendChild(square);
-   square.addEventListener("click", openModal)
+   square.addEventListener("click", openMedia)
+
+   function openMedia(){
+    console.log("clicked");
+    mediaBox = document.getElementById("mediaBox")
+    play = document.createElement("button")
+    play.innerHTML= "Play";
+    mediaBox.appendChild(play);
+
+    checkDiv = document.createElement("div")
+    checkDiv.setAttribute("id","checkDiv")
+    mediaBox.appendChild(checkDiv)
+    
+    team1Check = document.createElement("input")
+    team1Check.setAttribute("type", "checkbox")
+    checkDiv.appendChild(team1Check);
+
+    p1Label = document. createElement("p");
+    p1Label.innerHTML = "Team 1 Wins"
+    checkDiv.appendChild(p1Label)
+    
+    team2Check = document.createElement("input")
+    team2Check.setAttribute("type", "checkbox")
+    checkDiv.appendChild(team2Check);
+    
+
+    p2Label = document. createElement("p");
+    p2Label.innerHTML = "Team 2 Wins"
+    checkDiv.appendChild(p2Label)
+    
+
+ 
+
+    submit = document.createElement("button")
+    submit.innerHTML= "submit";
+    mediaBox.appendChild(submit);
+    
+
+   }
+
+
+}
    
-    function openModal(){
+    /*function openModal(){
        // console.log("money clicked");
         //const value = parseInt(this.innerHTML.slice(1));
         console.log("money clicked of $" + value + " value");
@@ -67,6 +108,7 @@ for(i=0;i<cat1.length;i++){
 }
 
 }
+*/
 
 /*function action(){
     console.log("Money was clicked")
