@@ -12,10 +12,34 @@ const dialog = document.querySelector("dialog");
 
 const cats = [
     [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"}],
+    {dollars: "$200", link: "https://github.com/new", answer:"github"},
+    {dollars: "$300", link: "https://github.com/new", answer:"github"},
+    {dollars: "$400", link: "https://github.com/new", answer:"github"},
+    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
     //..........................................................................
-    [{dollars: "$100", link: "https://www.facebook.com/", answer:"facebook"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"}]
+    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
+    {dollars: "$200", link: "https://github.com/new", answer:"github"},
+    {dollars: "$300", link: "https://github.com/new", answer:"github"},
+    {dollars: "$400", link: "https://github.com/new", answer:"github"},
+    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+    //..........................................................................
+    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
+    {dollars: "$200", link: "https://github.com/new", answer:"github"},
+    {dollars: "$300", link: "https://github.com/new", answer:"github"},
+    {dollars: "$400", link: "https://github.com/new", answer:"github"},
+    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+     //..........................................................................
+     [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
+     {dollars: "$200", link: "https://github.com/new", answer:"github"},
+     {dollars: "$300", link: "https://github.com/new", answer:"github"},
+     {dollars: "$400", link: "https://github.com/new", answer:"github"},
+     {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+      //..........................................................................
+    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
+    {dollars: "$200", link: "https://github.com/new", answer:"github"},
+    {dollars: "$300", link: "https://github.com/new", answer:"github"},
+    {dollars: "$400", link: "https://github.com/new", answer:"github"},
+    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
 ]
 
 console.log(cats[1][0].dollars)
