@@ -24,7 +24,7 @@ body{
 }
 
 #scoreBoard{
-    height: 2em;
+/*height: 2em;*/
 display: grid;
 grid-template-columns: 1fr 5fr 1fr;
 }
@@ -56,7 +56,7 @@ button{
 #catBoard{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 175px;
+    /*grid-template-rows: 175px;*/
     border: black solid 2px
 }
 
