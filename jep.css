@@ -45,7 +45,8 @@ button{
     height:300px;
     width: 200px;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: 1 fr 1fr;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .square{

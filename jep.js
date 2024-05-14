@@ -10,18 +10,27 @@ const board = document.getElementById("board");
 const dialog = document.querySelector("dialog");
 //const closeButton = document.getElementById("close");
 
-const cat1 = [
-    {dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"}
+const cats = [
+    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
+    {dollars: "$200", link: "https://github.com/new", answer:"github"}],
+    //..........................................................................
+    [{dollars: "$100", link: "https://www.facebook.com/", answer:"facebook"},
+    {dollars: "$200", link: "https://github.com/new", answer:"github"}]
 ]
 
-for(i=0;i<cat1.length;i++){
+console.log(cats[1][0].dollars)
+
+for(j=0;j<cats.length;j++){
+
+for(i=0;i<cats[j].length;i++){
+    
    const square = document.createElement("div");
    square.classList.add("square");
    square.classList.add("money")
-   let value = parseInt(cat1[i].dollars.slice(1));
+   console.log(cats[j][i].dollars);
+   let value = parseInt(cats[j][i].dollars.slice(1));
    square.innerHTML = "$"+value;
-   const link = cat1[i].link;
+   const link = cats[j][i].link;
    board.appendChild(square);
    square.addEventListener("click", openMedia)
 
@@ -85,19 +94,26 @@ for(i=0;i<cat1.length;i++){
         team1ScoreBox.innerHTML = team1Score;
         team2ScoreBox.innerHTML = team2Score;
 
+        document.getElementById("play").remove()
+        document.getElementById("submit").remove()
+        document.getElementById("checkDiv").remove()
+
+/*
             play.remove();
             submit.remove();
-            checkDiv.remove();
+            checkDiv.remove();*/
         
-            square.style.color = "rgb(0,0,190)";
+            
 
 
 
     }
+    square.style.color = "rgb(0,0,190)";
+    console.log(square)
+    square.removeEventListener("click", submitted,true)
 
 
-
-   }
+   }}
 
 
 }
@@ -172,7 +188,7 @@ boxy.classList.add("square");
 boxy.innerHTML = "boxy text " + value
    dialog.appendChild(boxy)
    dialog.showModal();
-    window.open(cat1[0],"_blank");
+    window.open(cats[0],"_blank");
 
 
 
