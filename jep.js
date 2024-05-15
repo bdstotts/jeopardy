@@ -24,23 +24,23 @@ const cats = [//It all adds up
     {dollars: "$400", link: "https://www.youtube.com/watch?v=Jp3fu05GdsM&ab_channel=YoungPilgrimMusic", answer:"queen youre my best friend"},
     {dollars: "$500", link: "https://www.youtube.com/watch?v=nlcIKh6sBtc&ab_channel=LordeVEVO", answer:"Lorde Royals"}],
     //Feeling Hungry..........................................................................
-    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"},
-    {dollars: "$300", link: "https://github.com/new", answer:"github"},
-    {dollars: "$400", link: "https://github.com/new", answer:"github"},
-    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+    [{dollars: "$100", link: "https://www.youtube.com/watch?v=YM_oPxKQR7o&ab_channel=BrianMartens", answer:"rhcp snow hey oh"},
+    {dollars: "$200", link: "https://www.youtube.com/watch?v=JZN9N-WFLKI&ab_channel=ALBAMUSIC", answer:"spice girls"},
+    {dollars: "$300", link: "https://www.youtube.com/watch?v=6Ejga4kJUts&ab_channel=TheCranberriesVEVO", answer:"cranberries"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=F_HoMkkRHv8&ab_channel=CakeVEVO", answer:"cake"},
+    {dollars: "$500", link: "https://www.youtube.com/watch?v=6oipFiNPfdY&ab_channel=BlindMelon-Topic", answer:"blind melon"}],
      //Lets go to Broadway..........................................................................
-     [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-     {dollars: "$200", link: "https://github.com/new", answer:"github"},
-     {dollars: "$300", link: "https://github.com/new", answer:"github"},
-     {dollars: "$400", link: "https://github.com/new", answer:"github"},
-     {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+     [{dollars: "$100", link: "https://www.youtube.com/watch?v=UeqKF_NF1Qs&ab_channel=Ren%C3%A9eEliseGoldsberry-Topic", answer:"hamilton"},
+     {dollars: "$200", link: "https://www.youtube.com/watch?v=tvsDObIQFhg&ab_channel=CamilaDS", answer:"into the woods"},
+     {dollars: "$300", link: "https://www.youtube.com/watch?v=77umP7IRxD4&t=31s&ab_channel=ThePhantomoftheOpera", answer:"phantom"},
+     {dollars: "$400", link: "https://www.youtube.com/watch?v=Dp8sYTlLQRY&ab_channel=ScreenBites", answer:"les mis"},
+     {dollars: "$500", link: "https://www.youtube.com/watch?v=s-VRyQprlu8&t=33s&ab_channel=Rodgers%26Hammerstein", answer:"sound of music"}],
       //As seen on TV..........................................................................
-    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"},
-    {dollars: "$300", link: "https://github.com/new", answer:"github"},
-    {dollars: "$400", link: "https://github.com/new", answer:"github"},
-    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
+    [{dollars: "$100", link: "https://www.youtube.com/watch?v=hBe0VCso0qs&ab_channel=Coin", answer:"fresh prince"},
+    {dollars: "$200", link: "https://www.youtube.com/watch?v=7KtAgAMzaeg&ab_channel=Tiktook", answer:"cheers"},
+    {dollars: "$300", link: "https://www.youtube.com/watch?v=Mpl86S5z9ic&ab_channel=Xero", answer:"simps"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=AdQ3JDLlmPI&ab_channel=GameofThrones", answer:"GoT"},
+    {dollars: "$500", link: "https://www.youtube.com/watch?v=O8W9qr7DB-o&ab_channel=GilGonzalez", answer:"twd"}],
 ]
 
 const catTitles = ["It All Adds Up", "Your Highness","Feeling Hungry", "Let's go to Broadway","As Seen on TV"]
