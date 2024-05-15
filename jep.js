@@ -11,31 +11,31 @@ const board = document.getElementById("board");
 const dialog = document.querySelector("dialog");
 //const closeButton = document.getElementById("close");
 
-const cats = [
+const cats = [//It all adds up
+    [{dollars: "$100", link: "https://www.youtube.com/watch?v=kPBzTxZQG5Q&ab_channel=3DoorsDownVEVO", answer:"3 doors down here w/o you"},
+    {dollars: "$200", link: "https://www.youtube.com/watch?v=3sO-Y1Zbft4&ab_channel=twentyonepilots", answer:"top shy away"},
+    {dollars: "$300", link: "https://www.youtube.com/watch?v=y7gnzVuHfdg&ab_channel=BoyzIIMen-Topic", answer:"b2m thank you"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=5d7EbtLb8ok&ab_channel=MatchboxTwenty", answer:"MB20 How far weve come"},
+    {dollars: "$500", link: "https://www.youtube.com/watch?v=l5261s3Z3RU&ab_channel=Beat-Club", answer:"3 dog night One"}],
+    //Your Highness..........................................................................
+    [{dollars: "$100", link: "https://www.youtube.com/watch?v=rblt2EtFfC4&ab_channel=Prince", answer:"youtube"},
+    {dollars: "$200", link: "https://www.youtube.com/watch?v=PivWY9wn5ps&ab_channel=michaeljacksonVEVO", answer:"MJ Man in the mirror"},
+    {dollars: "$300", link: "https://www.youtube.com/watch?v=vGJTaP6anOU&ab_channel=ElvisPresleyVEVO", answer:"Elvis- cant help falling..,"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=Jp3fu05GdsM&ab_channel=YoungPilgrimMusic", answer:"queen youre my best friend"},
+    {dollars: "$500", link: "https://www.youtube.com/watch?v=nlcIKh6sBtc&ab_channel=LordeVEVO", answer:"Lorde Royals"}],
+    //Feeling Hungry..........................................................................
     [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
     {dollars: "$200", link: "https://github.com/new", answer:"github"},
     {dollars: "$300", link: "https://github.com/new", answer:"github"},
     {dollars: "$400", link: "https://github.com/new", answer:"github"},
     {dollars: "$500", link: "https://github.com/new", answer:"github"}],
-    //..........................................................................
-    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"},
-    {dollars: "$300", link: "https://github.com/new", answer:"github"},
-    {dollars: "$400", link: "https://github.com/new", answer:"github"},
-    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
-    //..........................................................................
-    [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
-    {dollars: "$200", link: "https://github.com/new", answer:"github"},
-    {dollars: "$300", link: "https://github.com/new", answer:"github"},
-    {dollars: "$400", link: "https://github.com/new", answer:"github"},
-    {dollars: "$500", link: "https://github.com/new", answer:"github"}],
-     //..........................................................................
+     //Lets go to Broadway..........................................................................
      [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
      {dollars: "$200", link: "https://github.com/new", answer:"github"},
      {dollars: "$300", link: "https://github.com/new", answer:"github"},
      {dollars: "$400", link: "https://github.com/new", answer:"github"},
      {dollars: "$500", link: "https://github.com/new", answer:"github"}],
-      //..........................................................................
+      //As seen on TV..........................................................................
     [{dollars: "$100", link: "https://www.youtube.com/", answer:"youtube"},
     {dollars: "$200", link: "https://github.com/new", answer:"github"},
     {dollars: "$300", link: "https://github.com/new", answer:"github"},
