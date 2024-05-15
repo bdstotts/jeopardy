@@ -6,6 +6,7 @@ team2ScoreBox= document.getElementById("team2Score");
 team1Score =0;
 team2Score =0;
 
+catBoard = document.getElementById("catBoard")
 const board = document.getElementById("board");
 const dialog = document.querySelector("dialog");
 //const closeButton = document.getElementById("close");
@@ -42,7 +43,16 @@ const cats = [
     {dollars: "$500", link: "https://github.com/new", answer:"github"}],
 ]
 
-console.log(cats[1][0].dollars)
+const catTitles = ["It All Adds Up", "Your Highness","Feeling Hungry", "Let's go to Broadway","As Seen on TV"]
+
+for(k=0;k<catTitles.length;k++){
+    const titleSquare = document.createElement("div");
+    titleSquare.classList.add("square","category");
+    titleSquare.innerHTML = catTitles[k];
+    catBoard.appendChild(titleSquare);
+
+}
+
 
 for(j=0;j<cats.length;j++){
 
@@ -98,7 +108,7 @@ for(i=0;i<cats[j].length;i++){
     play.addEventListener("click",playMedia)
    
     function playMedia(){
-        window.open(link)
+        window.open(link, "_blank", "height=50,width=100")
     }
 
     submit.addEventListener("click", submitted)

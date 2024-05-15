@@ -60,6 +60,12 @@ button{
     border: black solid 2px
 }
 
+.category{
+    text-align: center;
+    text-justify: Center;
+
+}
+
 #board{
     display: grid;
     grid-auto-flow: column;
