@@ -7,11 +7,13 @@ team1Score =0;
 team2Score =0;
 
 catBoard = document.getElementById("catBoard")
-const board = document.getElementById("board");
-const dialog = document.querySelector("dialog");
+//const board = document.getElementById("board");
+//const dialog = document.querySelector("dialog");
 //const closeButton = document.getElementById("close");
 
-const cats = [//It all adds up
+const catTitles1 = ["It All Adds Up", "Your Highness","Feeling Hungry", "Let's go to Broadway","As Seen on TV"]
+
+const cats1 = [//It all adds up
     [{dollars: "$100", link: "https://www.youtube.com/watch?v=kPBzTxZQG5Q&ab_channel=3DoorsDownVEVO", answer:"3 doors down here w/o you"},
     {dollars: "$200", link: "https://www.youtube.com/watch?v=3sO-Y1Zbft4&ab_channel=twentyonepilots", answer:"top shy away"},
     {dollars: "$300", link: "https://www.youtube.com/watch?v=y7gnzVuHfdg&ab_channel=BoyzIIMen-Topic", answer:"b2m thank you"},
@@ -43,28 +45,32 @@ const cats = [//It all adds up
     {dollars: "$500", link: "https://www.youtube.com/watch?v=O8W9qr7DB-o&ab_channel=GilGonzalez", answer:"twd"}],
 ]
 
-const catTitles = ["It All Adds Up", "Your Highness","Feeling Hungry", "Let's go to Broadway","As Seen on TV"]
 
-for(k=0;k<catTitles.length;k++){
+
+createBoard(catTitles1,cats1);
+
+function createBoard(x,y){
+
+for(k=0;k<x.length;k++){
     const titleSquare = document.createElement("div");
     titleSquare.classList.add("square","category");
-    titleSquare.innerHTML = catTitles[k];
+    titleSquare.innerHTML = x[k];
     catBoard.appendChild(titleSquare);
 
 }
 
 
-for(j=0;j<cats.length;j++){
+for(j=0;j<y.length;j++){
 
-for(i=0;i<cats[j].length;i++){
+for(i=0;i<y[j].length;i++){
     
    const square = document.createElement("div");
    square.classList.add("square");
    square.classList.add("money")
-   console.log(cats[j][i].dollars);
-   let value = parseInt(cats[j][i].dollars.slice(1));
+   //console.log(y[j][i].dollars);
+   let value = parseInt(y[j][i].dollars.slice(1));
    square.innerHTML = "$"+value;
-   const link = cats[j][i].link;
+   const link = y[j][i].link;
    board.appendChild(square);
    square.addEventListener("click", openMedia)
 
@@ -103,7 +109,7 @@ for(i=0;i<cats[j].length;i++){
 
     items = [checkDiv,team1Check,team2Check,p1Label,p2Label,play,submit]
 
-    console.log(play)
+    //console.log(play)
 
     play.addEventListener("click",playMedia)
    
@@ -131,24 +137,34 @@ for(i=0;i<cats[j].length;i++){
         document.getElementById("play").remove()
         document.getElementById("submit").remove()
         document.getElementById("checkDiv").remove()
-
-/*
-            play.remove();
-            submit.remove();
-            checkDiv.remove();*/
-        
-            
-
-
-
+           
     }
+
     square.style.color = "rgb(0,0,190)";
     console.log(square)
     square.removeEventListener("click", submitted,true)
 
-
    }}
 
+
+}}
+
+
+function keyPressed(){
+    if (KeyboardEvent.key === "ArrowUp"){
+        destroyRebuild()
+    }
+}
+
+function destroyRebuild(){
+
+    console.log("Correct key pressed")
+    squares = document.getElementsByClassName("square");
+    squares = Array.from(squares);
+    squares.forEach(element => {
+    element.remove();
+        
+    });
 
 }
    
