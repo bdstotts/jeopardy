@@ -45,6 +45,39 @@ const cats1 = [//It all adds up
     {dollars: "$500", link: "https://www.youtube.com/watch?v=O8W9qr7DB-o&ab_channel=GilGonzalez", answer:"twd"}],
 ]
 
+const catTitles2 = ["Colors of the Rainbow", "Divas","Boy Bands", "Letters to You","Classic Emo"]
+
+const cats2 = [//Colors of the Rainbow
+    [{dollars: "$200", link: "", answer:"Maroon 5"},
+    {dollars: "$400", link: "", answer:"Green Day"},
+    {dollars: "$600", link: "", answer:"Black Sabbath"},
+    {dollars: "$800", link: "", answer:"Blue MAn group"},
+    {dollars: "$1000", link: "https://www.youtube.com/watch?v=Dy4HA3vUv2c&ab_channel=BlueOysterCultVEVO", answer:"Blue oyster cult ... reaper"}],
+    //Divas..........................................................................
+    [{dollars: "$200", link: "", answer:"Celine Dion MY heart will go on"},
+    {dollars: "$400", link: "", answer:"MAriah Carrey Emotions"},
+    {dollars: "$600", link: "", answer:"Whitney Houston I wanna dance with somebody"},
+    {dollars: "$800", link: "", answer:"Beyonce Halo"},
+    {dollars: "$1000", link: "", answer:"Ariana G Thank you next"}],
+    //Boy Bands..........................................................................
+    [{dollars: "$200", link: "", answer:"Nsync"},
+    {dollars: "$400", link: "", answer:"98 deg"},
+    {dollars: "$600", link: "", answer:"One Direction"},
+    {dollars: "$800", link: "", answer:"Backstreet Boys"},
+    {dollars: "$1000", link: "", answer:"BTS Butter"}],
+     //Letters to You..........................................................................
+     [{dollars: "$200", link: "", answer:"ACDC"},
+     {dollars: "$400", link: "", answer:"U2"},
+     {dollars: "$600", link: "", answer:"REM"},
+     {dollars: "$800", link: "", answer:"LMFAO party rock anthem"},
+     {dollars: "$1000", link: "", answer:"B-52s"}],
+      //Classic Emo..........................................................................
+    [{dollars: "$200", link: "https://www.youtube.com/watch?v=iBeyEXd46U8&ab_channel=TheSquiggleyPanda", answer:"Yellow Card Ocean Avenue"},
+    {dollars: "$400", link:  "https://www.youtube.com/watch?v=SU9Fm2bqZTo&ab_channel=21CLyrics", answer:"Fallout boy sugar were going.."},
+    {dollars: "$600", link:  "", answer:"Jimmy Eat World The middle"},
+    {dollars: "$800", link:  "", answer:"Sum 41 "},
+    {dollars: "$1000", link: "", answer:"Deathcab "}],
+]
 
 
 createBoard(catTitles1,cats1);
@@ -56,6 +89,7 @@ for(k=0;k<x.length;k++){
     titleSquare.classList.add("square","category");
     titleSquare.innerHTML = x[k];
     catBoard.appendChild(titleSquare);
+    console.log(k)
 
 }
 
@@ -149,6 +183,13 @@ for(i=0;i<y[j].length;i++){
 
 }}
 
+team1Box = document.getElementById("team1Box")
+const doubleJep = document.createElement("div")
+doubleJep.classList.add("double")
+//console.log(typeof(team1Box))
+doubleJep.addEventListener("click", (destroyRebuild))
+team1Box.appendChild(doubleJep);
+
 
 function keyPressed(){
     if (KeyboardEvent.key === "ArrowUp"){
@@ -162,11 +203,13 @@ function destroyRebuild(){
     squares = document.getElementsByClassName("square");
     squares = Array.from(squares);
     squares.forEach(element => {
-    element.remove();
-        
+    element.remove();        
     });
 
+    createBoard(catTitles2, cats2)
+
 }
+/////add this note to cjeck for commit
    
     /*function openModal(){
        // console.log("money clicked");

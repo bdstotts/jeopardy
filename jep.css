@@ -53,6 +53,12 @@ button{
     width: 5em;
 }
 
+.double{
+    background-color: rgb(241, 241, 241);
+    height: 1em;
+    width: 1em;
+}
+
 #catBoard{
     display: grid;
     grid-template-columns: repeat(5,1fr);
