@@ -48,35 +48,35 @@ const cats1 = [//It all adds up
 const catTitles2 = ["Colors of the Rainbow", "Divas","Boy Bands", "Letters to You","Classic Emo"]
 
 const cats2 = [//Colors of the Rainbow
-    [{dollars: "$200", link: "", answer:"Maroon 5"},
-    {dollars: "$400", link: "", answer:"Green Day"},
-    {dollars: "$600", link: "", answer:"Black Sabbath"},
-    {dollars: "$800", link: "", answer:"Blue MAn group"},
+    [{dollars: "$200", link: "https://www.youtube.com/watch?v=Y7ix6RITXM0&ab_channel=Maroon5VEVO", answer:"Maroon 5 Maps"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=51XzW98wEDg&ab_channel=7clouds", answer:"Green Day boulevard of broken"},
+    {dollars: "$600", link: "https://www.youtube.com/watch?v=0LMSF4tbHQQ&ab_channel=WindMusic", answer:"Black Sabbath Iron Man"},
+    {dollars: "$800", link: "https://www.youtube.com/watch?v=dOLBn8GKBlA&ab_channel=daavve95", answer:"Blue MAn group drumbone"},
     {dollars: "$1000", link: "https://www.youtube.com/watch?v=Dy4HA3vUv2c&ab_channel=BlueOysterCultVEVO", answer:"Blue oyster cult ... reaper"}],
     //Divas..........................................................................
-    [{dollars: "$200", link: "", answer:"Celine Dion MY heart will go on"},
-    {dollars: "$400", link: "", answer:"MAriah Carrey Emotions"},
-    {dollars: "$600", link: "", answer:"Whitney Houston I wanna dance with somebody"},
-    {dollars: "$800", link: "", answer:"Beyonce Halo"},
-    {dollars: "$1000", link: "", answer:"Ariana G Thank you next"}],
+    [{dollars: "$200", link: "https://www.youtube.com/watch?v=HmA7vHGH1wI&ab_channel=VibeMusic", answer:"Celine Dion MY heart will go on"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=NrJEFrth27Q&ab_channel=MariahCareyVEVO", answer:"MAriah Carrey Emotions"},
+    {dollars: "$600", link: "https://www.youtube.com/watch?v=t4noaywbaik&ab_channel=Alternate", answer:"Whitney Houston I wanna dance with somebody"},
+    {dollars: "$800", link: "https://www.youtube.com/watch?v=wekDNXDWGjM&ab_channel=VibeMusic", answer:"Beyonce Halo"},
+    {dollars: "$1000", link: "https://www.youtube.com/watch?v=QUme0h-uPP4&ab_channel=SyrebralVibes", answer:"Ariana G Thank you next"}],
     //Boy Bands..........................................................................
-    [{dollars: "$200", link: "", answer:"Nsync"},
-    {dollars: "$400", link: "", answer:"98 deg"},
-    {dollars: "$600", link: "", answer:"One Direction"},
-    {dollars: "$800", link: "", answer:"Backstreet Boys"},
-    {dollars: "$1000", link: "", answer:"BTS Butter"}],
+    [{dollars: "$200", link: "https://www.youtube.com/watch?v=aS-cymQhbzk&ab_channel=NSYNCVEVO", answer:"Nsync space cowboy"},
+    {dollars: "$400", link: "https://www.youtube.com/watch?v=7JFzuQtSxh4&ab_channel=Pillow", answer:"backstreet boys largr than life"},
+    {dollars: "$600", link: "https://www.youtube.com/watch?v=mfavkCY52MI&ab_channel=MSCLyrics", answer:"One Direction what makes you beautiful"},
+    {dollars: "$800", link: "https://www.youtube.com/watch?v=Rj17ICdkUxo&ab_channel=ALBAMUSIC", answer:"98 deg beacsue of you"},
+    {dollars: "$1000", link: "https://www.youtube.com/watch?v=o9mLyHtSLjk&ab_channel=BTS-Topic", answer:"BTS Butter"}],
      //Letters to You..........................................................................
-     [{dollars: "$200", link: "", answer:"ACDC"},
-     {dollars: "$400", link: "", answer:"U2"},
-     {dollars: "$600", link: "", answer:"REM"},
-     {dollars: "$800", link: "", answer:"LMFAO party rock anthem"},
-     {dollars: "$1000", link: "", answer:"B-52s"}],
+     [{dollars: "$200", link: "https://www.youtube.com/watch?v=skwZ5MQ7CfE&ab_channel=Vibratium", answer:"ACDC thunderstruk"},
+     {dollars: "$400", link: "https://www.youtube.com/watch?v=EzeDqRhM09w&ab_channel=killingloneleyness01", answer:"U2"},
+     {dollars: "$600", link: "https://www.youtube.com/watch?v=5IqkhhSycc4", answer:"REM"},
+     {dollars: "$800", link: "https://www.youtube.com/watch?v=tsMDKjb54EM&ab_channel=Loku", answer:"LMFAO party rock anthem"},
+     {dollars: "$1000", link: "https://www.youtube.com/watch?v=d1Nq82S7_0Q&ab_channel=TheB-52%27s-Topic", answer:"B-52s"}],
       //Classic Emo..........................................................................
     [{dollars: "$200", link: "https://www.youtube.com/watch?v=iBeyEXd46U8&ab_channel=TheSquiggleyPanda", answer:"Yellow Card Ocean Avenue"},
     {dollars: "$400", link:  "https://www.youtube.com/watch?v=SU9Fm2bqZTo&ab_channel=21CLyrics", answer:"Fallout boy sugar were going.."},
-    {dollars: "$600", link:  "", answer:"Jimmy Eat World The middle"},
-    {dollars: "$800", link:  "", answer:"Sum 41 "},
-    {dollars: "$1000", link: "", answer:"Deathcab "}],
+    {dollars: "$600", link:  "https://www.youtube.com/watch?v=4QWzYjatCCs&ab_channel=B3AST858", answer:"Jimmy Eat World The middle"},
+    {dollars: "$800", link:  "https://www.youtube.com/watch?v=TD6V9Vz9yTY&ab_channel=VibersVibin", answer:"Sum 41 in too deep"},
+    {dollars: "$1000", link: "https://www.youtube.com/watch?v=NDHY1D0tKRA&ab_channel=Truhffles", answer:"Deathcab ill follow you into the dark"}],
 ]
 
 
